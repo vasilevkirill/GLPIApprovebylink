@@ -19,7 +19,7 @@ function plugin_init_approvebylink()
 function plugin_version_approvebylink()
 {
     return [
-        'name' => 'Approve Tiket By Link',
+        'name' => 'Approve Ticket By Link',
         'version' => APPROVEBYLINK_VERSION,
         'author' => '<a target="_blank" href="https://vasilevkirill.com">Vasilev kirill </a>',
         'license' => 'GLPv3',

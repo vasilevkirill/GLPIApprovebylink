@@ -4,15 +4,14 @@ class PluginApprovebylinkFront extends CommonGLPI
 {
     function showFormApprove($ticket, $get)
     {
-        $title = sprintf("Подтверждение заявки: %s", $ticket['name']);
-        print_r($ticket);
+        $title = sprintf("Approvals for the ticket: %s", $ticket['name']);
         echo "<form name='form' action=\"" . Toolbox::getItemTypeFormURL(__CLASS__) . "\" method='post'>";
         echo "<div class='center' id='tabsbody'>";
         echo "<table class='tab_cadre_fixe'>";
         echo "<tr class='tab_bg_1'><th colspan='4'>" . __($title) . "</th></tr>";
-        echo "<td >" . __('Коментарий, жалоба или уточнение : ') . "</td>";
-        echo "<td colspan='3'><textarea rows='3' cols='90' name='comment' placeholder='Спасибо, всё работает.'></textarea></td></tr>";
-        echo "<tr class='tab_bg_1'><td>" . __('Вы подтверждаете выполнение заявки? : ') . "</td>";
+        echo "<td >" . __('Approval comments : ') . "</td>";
+        echo "<td colspan='3'><textarea rows='3' cols='90' name='comment' placeholder='Thanks, good job!.'></textarea></td></tr>";
+        echo "<tr class='tab_bg_1'><td>" . __('Validate? : ') . "</td>";
         echo "<td colspan='3'>";
         Dropdown::showYesNo("approve", 1, -1);
         echo "</td>";

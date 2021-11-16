@@ -73,9 +73,9 @@ class PluginApprovebylinkConfig extends CommonDBTM {
       echo "<table class='tab_cadre_fixe'>";
       echo "<tr><th colspan='4'>" . __('Approve By Link setup config') . "</th></tr>";
       echo "<tr><td colspan='4'>" . __('Do not change the salt values, links that have already been sent will stop working.' ) . "</td></tr>";
-      echo "<td >" . __('Соль #1 : ')."</td>";
+      echo "<td >" . __('Salt #1 : ')."</td>";
       echo "<td colspan='3'><textarea rows='3' cols='90' name='salt1'>".$config['salt1']."</textarea></td></tr>";
-      echo "<td >" . __('Соль #2 : ')."</td>";
+      echo "<td >" . __('Salt #2 : ')."</td>";
       echo "<td colspan='3'><textarea rows='3' cols='90' name='salt2'>".$config['salt2']."</textarea></td></tr>";
       //echo "<td >" . __('Только инициатор может подтвердить выполнение? :') . "</td>";
       //echo "<td colspan='3'>";
